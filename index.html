@@ -4,11 +4,11 @@
 	<meta charset="UTF-8"/>
 	<title>_Myanmar Doc</title>
 	<link rel="stylesheet" href="assets/css/monokai_sublime.css"/>
-	<link rel="stylesheet" href="assets/css/style.css"/>
-</head>
+			<link rel="stylesheet" href="assets/css/style.css"/>
+	</head>
 <body>
 <div class="main container">
-	<div id="float" style=""></div>
+	<div id="float" style="display:none"></div>
 	<div id="sidebar">
 		<a class="sidebar-title" href="#">
 			Underscore.js 
@@ -138,12 +138,12 @@
 		</div>
 		<!-- posts -->
 		<!-- post.php -->
-<div class="posts">
-	<h2 id="Collections">Collection Functions (Arrays or Objects)</h2>
-						<div class="post" id="each">
-				<div class="content">
-					<b class="header">each</b>
-										﻿<code>_.each(list , iterator, [context])</code>
+	<div class="posts">
+		<h2 id="Collections">Collection Functions (Arrays or Objects)</h2>
+		<div class="post" id="each">
+			<div class="content">
+				<b class="header">each</b>
+				﻿<code>_.each(list , iterator, [context])</code>
 <span class="alias">
 	forEach
 </span>
@@ -179,13 +179,13 @@ numberic <b>length</b> property ပါေသာ Object မ်ား passing
 လုပ္ျခင္းကို လံုး၀ ေရွာင္ရွားရပါမည္။
 i.e: {name: 'koko', age: 20,  <b>length</b>:3}
 </pre>
-				</div>
 			</div>
-				<!-- end post -->
-						<div class="post" id="map">
-				<div class="content">
-					<b class="header">map</b>
-										﻿<code>_.map(list, iterator, [context])</code>
+		</div>
+<!-- end post -->
+		<div class="post" id="map">
+			<div class="content">
+				<b class="header">map</b>
+				﻿<code>_.map(list, iterator, [context])</code>
 <span class="alias">
 	collect 
 </span>
@@ -213,13 +213,13 @@ _.map(['2', '22', '33'],function(v, k , l){
 });
 //=> [1, 2, 3]
 </u>
-				</div>
 			</div>
-				<!-- end post -->
-						<div class="post" id="reduce">
-				<div class="content">
-					<b class="header">reduce</b>
-										﻿<code>_.reduce(list, iterator, memo, [context])</code> 
+		</div>
+<!-- end post -->
+		<div class="post" id="reduce">
+			<div class="content">
+				<b class="header">reduce</b>
+				﻿<code>_.reduce(list, iterator, memo, [context])</code> 
 <span class="alias">inject, foldl</span>
 <pre class="text">
 Array ထဲက element ေတြ ဒါမွမဟုတ္ Object ထဲက value
@@ -247,13 +247,13 @@ _.reduce(list,function(a,b){
 },[0]);
 //=> [0, 1, 2, 3] 
 </u>
-				</div>
 			</div>
-				<!-- end post -->
-						<div class="post" id="reduceRight">
-				<div class="content">
-					<b class="header">reduceRight</b>
-										<code>_.reduceRight(list, iterator, memo, [context])</code>
+		</div>
+<!-- end post -->
+		<div class="post" id="reduceRight">
+			<div class="content">
+				<b class="header">reduceRight</b>
+				<code>_.reduceRight(list, iterator, memo, [context])</code>
 <span class="alias">foldr</span>
 <pre class="text">
 <a href="#reduce">reduce</a> ကိုေျပာင္းျပန္လုပ္ထားတာပါ
@@ -279,13 +279,13 @@ _.reduceRight({ last: 'Ba', first: 'Mg ' }, function(m, el){
 });
 //=> Mg Ba
 </u>
-				</div>
 			</div>
-				<!-- end post -->
-						<div class="post" id="find">
-				<div class="content">
-					<b class="header">find</b>
-										﻿<code>_.find(list, predicate, [context])</code>
+		</div>
+<!-- end post -->
+		<div class="post" id="find">
+			<div class="content">
+				<b class="header">find</b>
+				﻿<code>_.find(list, predicate, [context])</code>
 <span class="alias">detect</span>
 <pre class="text">
 predicate မွာ element ေတြကိုစစ္ၿပီး boolean return ျပန္ေပးရပါတယ္
@@ -307,13 +307,13 @@ _.find([1, 3, 5], function(num){
 });
 //=> undefined
 </u>
-				</div>
 			</div>
-				<!-- end post -->
-						<div class="post" id="filter">
-				<div class="content">
-					<b class="header">filter</b>
-										﻿<code>_.filter(list, predicate, [context])</code>
+		</div>
+<!-- end post -->
+		<div class="post" id="filter">
+			<div class="content">
+				<b class="header">filter</b>
+				﻿<code>_.filter(list, predicate, [context])</code>
 <span class="alias">select</span>
 <pre class="text">
 filter ကေတာ့ list ထဲက value အားလံုးကိုၾကည့္ပါမယ္၊
@@ -336,13 +336,13 @@ _.filter([1, 3, 5, 7], function(num){
 //=> []
 </u>
 
-				</div>
 			</div>
-				<!-- end post -->
-						<div class="post" id="where">
-				<div class="content">
-					<b class="header">where</b>
-										﻿<code>_.where(list, properties)</code>
+		</div>
+<!-- end post -->
+		<div class="post" id="where">
+			<div class="content">
+				<b class="header">where</b>
+				﻿<code>_.where(list, properties)</code>
 <pre class="text">
 where က <a href="#filter">filter</a> နဲ႔ သေဘာတရား တူပါတယ္
 list ထဲက items ေတြကို properties param နဲ႔တိုက္စစ္ပါတယ္
@@ -353,13 +353,13 @@ _.where(listOfPlays, {author: "Shakespeare", year: 1611});
 //=> [{title: "Cymbeline", author: "Shakespeare", year: 1611},
 //    {title: "The Tempest", author: "Shakespeare", year: 1611}]
 </u>
-				</div>
 			</div>
-				<!-- end post -->
-						<div class="post" id="findWhere">
-				<div class="content">
-					<b class="header">findWhere</b>
-										﻿<code>_.findWhere(list, properties)</code>
+		</div>
+<!-- end post -->
+		<div class="post" id="findWhere">
+			<div class="content">
+				<b class="header">findWhere</b>
+				﻿<code>_.findWhere(list, properties)</code>
 <pre class='text'>
 list ထဲကေန properties နဲ႔ ကိုက္ညီတဲ့ <b>ပထမဆံုး</b>
 item ကို return ျပန္ေပးပါမယ္၊
@@ -375,13 +375,13 @@ _.findWhere(persons, {age: 17})
 //=> Object {name: "koko", age: 17}
 </u>
 
-				</div>
 			</div>
-				<!-- end post -->
-						<div class="post" id="reject">
-				<div class="content">
-					<b class="header">reject</b>
-										﻿<code>_.reject(list, predicate, [context])</code>
+		</div>
+<!-- end post -->
+		<div class="post" id="reject">
+			<div class="content">
+				<b class="header">reject</b>
+				﻿<code>_.reject(list, predicate, [context])</code>
 <pre class="text">
 <a href="#filter">filter</a> နဲ႔ဆန္႕က်င္ဘက္ပါ
 list ထဲက element ေတြအားလံုးကို စစ္ပါတယ္
@@ -395,13 +395,13 @@ _.reject([1, 2, 3, 4, 5], function(num){
 });
 //=> [1, 3, 5]
 </u>
-				</div>
 			</div>
-				<!-- end post -->
-						<div class="post" id="every">
-				<div class="content">
-					<b class="header">every</b>
-										﻿<code>_.every(list, predicate, [context])</code>
+		</div>
+<!-- end post -->
+		<div class="post" id="every">
+			<div class="content">
+				<b class="header">every</b>
+				﻿<code>_.every(list, predicate, [context])</code>
 <span class='alias'>all</span>
 <pre class='text'>
 list ထဲက element အားလံုးကို predicate နဲ႔စစ္ပါတယ္
@@ -427,13 +427,13 @@ _.every([1, 'two', null, true], function(value){
 _.every(['mdy', 'ygn', 1, true], _.identity);
 //=> true
 </u>
-				</div>
 			</div>
-				<!-- end post -->
-						<div class="post" id="some">
-				<div class="content">
-					<b class="header">some</b>
-										<code>_.some(list, [predicate], [context])</code>
+		</div>
+<!-- end post -->
+		<div class="post" id="some">
+			<div class="content">
+				<b class="header">some</b>
+				<code>_.some(list, [predicate], [context])</code>
 <span class='alias'>any</span>
 <pre class='text'>
 <a href='#every'>every</a> နဲ႔ ဆန္႔က်င္ဘက္ျဖစ္ပါတယ္ 
@@ -443,13 +443,13 @@ element တစ္ခုက true ျဖစ္တာနဲ႔ true return ျပ�
 <u>
 _.some([null, 0, 'yes', false]);
 //=> true
-</u>				</div>
-			</div>
-				<!-- end post -->
-						<div class="post" id="contains">
-				<div class="content">
-					<b class="header">contains</b>
-										﻿<code>_.contains(list, value)</code>
+</u>			</div>
+		</div>
+<!-- end post -->
+		<div class="post" id="contains">
+			<div class="content">
+				<b class="header">contains</b>
+				﻿<code>_.contains(list, value)</code>
 <span class='alias'>include</span>
 <pre class='text'>
 list ထဲမွာ value ရိွလားမရိွလားကို boolean နဲ႔ return ျပန္ပါတယ္
@@ -459,13 +459,13 @@ indexOf ကိုအသံုးျပဳထားျခင္းပဲျဖစ
 _.contains([1, 2, 3], 3);
 //=> true
 </u>
-				</div>
 			</div>
-				<!-- end post -->
-						<div class="post" id="invoke">
-				<div class="content">
-					<b class="header">invoke</b>
-										﻿<code>_.invoke(list, methodName, *arguments)</code>
+		</div>
+<!-- end post -->
+		<div class="post" id="invoke">
+			<div class="content">
+				<b class="header">invoke</b>
+				﻿<code>_.invoke(list, methodName, *arguments)</code>
 <pre class='text'>
 <b>methodName</b> က list ထဲက item ရဲ႕MethodName ပါ [not task] 
 list ထဲက item တိုင္းမွာအလုပ္လုပ္မွာပါ</pre>
@@ -484,13 +484,13 @@ _.invoke([person], 'say');
 _.invoke('laravel', 'slice'); 
 //=> ["l", "a", "r", "a", "v", "e", "l"]
 </u>
-				</div>
 			</div>
-				<!-- end post -->
-						<div class="post" id="pluck">
-				<div class="content">
-					<b class="header">pluck</b>
-										﻿<code>_.pluck(lsit, propertyName)</code>
+		</div>
+<!-- end post -->
+		<div class="post" id="pluck">
+			<div class="content">
+				<b class="header">pluck</b>
+				﻿<code>_.pluck(lsit, propertyName)</code>
 <pre class='text'>
 list ထဲကကိုယ္လုိခ်င္တဲ့ property(or)index ကိုပဲရယူခ်င္တဲ့ အခါမွာ
 သံုးပါတယ္၊ အရမ္းအသံုး၀င္ပါတယ္၊
@@ -514,13 +514,13 @@ var list = [
 _.pluck(list, 0);
 //=> ["msi", "acer", "hp"]
 </u>
-				</div>
 			</div>
-				<!-- end post -->
-						<div class="post" id="max">
-				<div class="content">
-					<b class="header">max</b>
-										﻿<code>_.max(list, [iterator], [context])</code>
+		</div>
+<!-- end post -->
+		<div class="post" id="max">
+			<div class="content">
+				<b class="header">max</b>
+				﻿<code>_.max(list, [iterator], [context])</code>
 <pre class='text'>
 </pre>
 max method ကေတာ့ iterator က return ေပးတဲ့ value
@@ -533,13 +533,13 @@ _.max(list, function(el){ return el.age; });
 <u>
 _.max([2, 5, 0]); // Math.max(2, 5, 0)
 //=> 5
-</u>				</div>
-			</div>
-				<!-- end post -->
-						<div class="post" id="min">
-				<div class="content">
-					<b class="header">min</b>
-										﻿﻿<code>_.min(list, [iterator], [context])</code>
+</u>			</div>
+		</div>
+<!-- end post -->
+		<div class="post" id="min">
+			<div class="content">
+				<b class="header">min</b>
+				﻿﻿<code>_.min(list, [iterator], [context])</code>
 <pre class='text'>
 </pre>
 min method ကေတာ့ iterator က return ေပးတဲ့ value
@@ -554,13 +554,13 @@ _.min(music, function(el) {
 <u>
 _.min([2, 5, 0]); // Math.min(2, 5, 0)
 //=> 0
-</u>				</div>
-			</div>
-				<!-- end post -->
-						<div class="post" id="sortBy">
-				<div class="content">
-					<b class="header">sortBy</b>
-										﻿<code>_.sortBy(list, iterator, [context])</code>
+</u>			</div>
+		</div>
+<!-- end post -->
+		<div class="post" id="sortBy">
+			<div class="content">
+				<b class="header">sortBy</b>
+				﻿<code>_.sortBy(list, iterator, [context])</code>
 <pre class='text'>
 list ကို sort လုပ္ရာမွာအသံုးျပဳပါတယ္
 iterator က return ျပန္တဲ့ vlaue အလိုက္ <b>ascending order</b> နဲ႔ စီေပးပါတယ္
@@ -571,13 +571,13 @@ _.sortBy(['hp', 'gigabyte', 'apple'], function(el){
 });
 //=> ["gigabyte", "apple", "hp"]
 </u>
-				</div>
 			</div>
-				<!-- end post -->
-						<div class="post" id="groupBy">
-				<div class="content">
-					<b class="header">groupBy</b>
-										﻿<code>_.groupBy(list, iterator, [context]);</code>
+		</div>
+<!-- end post -->
+		<div class="post" id="groupBy">
+			<div class="content">
+				<b class="header">groupBy</b>
+				﻿<code>_.groupBy(list, iterator, [context]);</code>
 <pre class='text'>
 list ထဲက element ေတြကို group ဖြဲ႔ၿပီး object အျဖစ္ return ျပန္ေပးပါတယ္
 ဘယ္လို group ဖြဲ႔မလဲဆိုတာ iterator မွာသတ္မွတ္ေပးရပါမယ္
@@ -610,13 +610,13 @@ _.groupBy(list , 0);
 _.groupBy(['one', 'two', 'three'], 'length');
 //=> {3: ["one", "two"], 5: ["three"]}
 </u>
-				</div>
 			</div>
-				<!-- end post -->
-						<div class="post" id="indexBy">
-				<div class="content">
-					<b class="header">indexBy</b>
-										﻿<code>_.indexBy(list, iterator, [context]</code>
+		</div>
+<!-- end post -->
+		<div class="post" id="indexBy">
+			<div class="content">
+				<b class="header">indexBy</b>
+				﻿<code>_.indexBy(list, iterator, [context]</code>
 <pre class='text'>
 IndexBy ကေတာ့ list ထဲက iterator က return ျပန္ေပးတဲ့ value ဒါမွမဟုတ္
 item ရဲ့ property အလိုက္ assending ording နဲ့ စီျပီး return ျပန္ေပးပါတယ္
@@ -635,13 +635,13 @@ _.indexBy(posts, 'id');
 //       "30":{"id":30,"vote":30}
 //   }
 </u>
-				</div>
 			</div>
-				<!-- end post -->
-						<div class="post" id="countBy">
-				<div class="content">
-					<b class="header">countBy</b>
-										﻿<code>_.countBy(list, iterator, [context])</code>
+		</div>
+<!-- end post -->
+		<div class="post" id="countBy">
+			<div class="content">
+				<b class="header">countBy</b>
+				﻿<code>_.countBy(list, iterator, [context])</code>
 
 <pre class='text'>list ထဲက element ေတြအားလံုး iterator နဲ႔စစ္ပါတယ္
 iterator က return ျပန္တဲ့ value ကို result ရဲ႕ key အျဖစ္ထားပါတယ္
@@ -668,13 +668,13 @@ _.countBy([1.3, 2.1, 2.4], function(num){
 });
 //=> {1: 1, 2: 2]}
 </u>
-				</div>
 			</div>
-				<!-- end post -->
-						<div class="post" id="shuffle">
-				<div class="content">
-					<b class="header">shuffle</b>
-										﻿<code>_.shufle(list)</code>
+		</div>
+<!-- end post -->
+		<div class="post" id="shuffle">
+			<div class="content">
+				<b class="header">shuffle</b>
+				﻿<code>_.shufle(list)</code>
 <pre class='text'>
 list ကို randomly စီခ်င္တဲ့ အခါမွာသံုးပါတယ္ 
 shuffle လုပ္တဲ့ ပံုစံကို ေတာ့ <a target="_blank" href="http://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle">Fisher-Yates shuffle</a> ကိုအသံုးျပဳထားပါတယ္
@@ -683,13 +683,13 @@ shuffle လုပ္တဲ့ ပံုစံကို ေတာ့ <a target="_
 _.shuffle([1, 2, 3, 4, 5, 6]);
 // => [4, 1, 6, 3, 5, 2]
 </u>
-				</div>
 			</div>
-				<!-- end post -->
-						<div class="post" id="sample">
-				<div class="content">
-					<b class="header">sample</b>
-										﻿<code>_.sample(list, [n])</code>
+		</div>
+<!-- end post -->
+		<div class="post" id="sample">
+			<div class="content">
+				<b class="header">sample</b>
+				﻿<code>_.sample(list, [n])</code>
 <pre class='text'>
 list ထဲက random က်တဲ့ element ကို  return ျပန္ေပးပါတယ္
 <b>n</b> ကေတာ့ element ဘယ္နွစ္ခု return ျပန္ေပးမလဲဆိုတာကို သတ္မွတ္ေပးဖို႔ပါ
@@ -701,13 +701,13 @@ _.sample([1, 2, 3, 4, 5, 6]);
 _.sample([1, 2, 3, 4, 5, 6], 3);
 //=> [4, 6, 1]
 </u>
-				</div>
 			</div>
-				<!-- end post -->
-						<div class="post" id="toArray">
-				<div class="content">
-					<b class="header">toArray</b>
-										﻿<code>_.toArray(list)</code>
+		</div>
+<!-- end post -->
+		<div class="post" id="toArray">
+			<div class="content">
+				<b class="header">toArray</b>
+				﻿<code>_.toArray(list)</code>
 <pre class='text'>
 toArray method က list ကို <b>real Array</b> အျဖစ္ ေျပာင္းလဲဖို႔အတြက္သံုးပါတယ္
 function(){} ထဲမွာအသံုးျပဳတဲ့ <b>arguments</b> လိုမ်ိဳး Array-like Object ကို 
@@ -723,13 +723,13 @@ real Array ေျပာင္းတဲ့အခါမွာ အရမ္းအ�
 _.toArray('coconut');
 //=> ["c", "o", "c", "o", "n", "u", "t"]
 </u>
-				</div>
 			</div>
-				<!-- end post -->
-						<div class="post" id="size">
-				<div class="content">
-					<b class="header">size</b>
-										<code>_.size(list)</code>
+		</div>
+<!-- end post -->
+		<div class="post" id="size">
+			<div class="content">
+				<b class="header">size</b>
+				<code>_.size(list)</code>
 <pre class='text'>
 list မွာပါ၀င္တဲ့ values/elements အေရအတြက္ကို return ျပန္ေပးပါတယ္
 </pre>
@@ -740,17 +740,17 @@ _.size({one: 1, two: 2, three: 3});
 _.size([1,2,3,4]);
 //=> 4
 </u>
-				</div>
 			</div>
-				<!-- end post -->
-		<!-- end posts -->
-</div>
-<div class="posts">
-	<h2 id="Arrays">Array Functions</h2>
-						<div class="post" id="first">
-				<div class="content">
-					<b class="header">first</b>
-										<code>_.first(array, [n])</code>
+		</div>
+<!-- end post -->
+<!-- end posts -->
+	</div>
+	<div class="posts">
+		<h2 id="Arrays">Array Functions</h2>
+		<div class="post" id="first">
+			<div class="content">
+				<b class="header">first</b>
+				<code>_.first(array, [n])</code>
 <span class='alias'>
 head, take
 </span>
@@ -775,19 +775,19 @@ i.e : arr['one'] = 'first';
        arr[3.14]  = 'PI';
 </pre>
 
-				</div>
 			</div>
-				<!-- end post -->
-						<div class="post" id="initial">
-				<div class="content">
-					<b class="header">initial</b>
-														</div>
-			</div>
-				<!-- end post -->
-						<div class="post" id="last">
-				<div class="content">
-					<b class="header">last</b>
-										<code>_.last(array, [n])</code>
+		</div>
+<!-- end post -->
+		<div class="post" id="initial">
+			<div class="content">
+				<b class="header">initial</b>
+							</div>
+		</div>
+<!-- end post -->
+		<div class="post" id="last">
+			<div class="content">
+				<b class="header">last</b>
+				<code>_.last(array, [n])</code>
 <pre class='text'>
 Array ရဲ႔ေနာက္ဆံုး element ကို return ျပန္ေပးပါမယ္
 <b>n</b> ကေတာ့ return ျပန္မယ္ element အေရအတြက္ကို သက္မွတ္ေပးဖို႔ပါ
@@ -795,13 +795,13 @@ Array ရဲ႔ေနာက္ဆံုး element ကို return ျပန္
 <u>
 _.last([1, 3, 4]);
 //=> 4
-</u>				</div>
-			</div>
-				<!-- end post -->
-						<div class="post" id="rest">
-				<div class="content">
-					<b class="header">rest</b>
-										<code>_.rest(array, [index])</code>
+</u>			</div>
+		</div>
+<!-- end post -->
+		<div class="post" id="rest">
+			<div class="content">
+				<b class="header">rest</b>
+				<code>_.rest(array, [index])</code>
 <span class="alias">tail, drop</span>
 <pre class="text">
 array တစ္ခုလံုးကို ေရွ႕ဆံုး element ကိုခ်န္ၿပီး  ျပန္ေပးမွာပါ၊
@@ -813,13 +813,13 @@ _.rest([1, 2, 3, 4]);
 
 _.rest([1, 2, 3, 4, 5], 2);
 //=> [3, 4, 5]
-</u>				</div>
-			</div>
-				<!-- end post -->
-						<div class="post" id="compact">
-				<div class="content">
-					<b class="header">compact</b>
-										<code>_.compact(array)</code>
+</u>			</div>
+		</div>
+<!-- end post -->
+		<div class="post" id="compact">
+			<div class="content">
+				<b class="header">compact</b>
+				<code>_.compact(array)</code>
 <pre class='text'>
 Array ထဲကေန falsy value ေတြကို ဖယ္ထုတ္ဖို႔အတြက္သံုးပါတယ္၊
 falsy value ဆိုတာ false, "", null, NaN, undefined, 0  ေတြကို ဆိုလိုပါတယ္
@@ -827,14 +827,14 @@ falsy value ဆိုတာ false, "", null, NaN, undefined, 0  ေတြကိ�
 <u>
 _.compact([1, 2, '', false, 0, 3])
 //=> [1, 2, 3]
-</u>				</div>
-			</div>
-				<!-- end post -->
-					<!-- end post -->
-						<div class="post" id="without">
-				<div class="content">
-					<b class="header">without</b>
-										<code>_.without(array, *values)</code>
+</u>			</div>
+		</div>
+<!-- end post -->
+<!-- end post -->
+		<div class="post" id="without">
+			<div class="content">
+				<b class="header">without</b>
+				<code>_.without(array, *values)</code>
 <pre class='text'>
 array ထဲကမလိုခ်င္တဲ့ values ေတြကိုဖယ္ရွားဖို႔အတြက္သံုးပါတယ္၊
 ဖယ္ရွားခ်င္တဲ့ value ေတြကို comma(',') ခံၿပီးေရးသြားရံုပါပဲ၊
@@ -842,13 +842,13 @@ array ထဲကမလိုခ်င္တဲ့ values ေတြကိုဖယ
 <u>
 _.without([1, 2, 1, 0, 3, 1, 4], 0, 1);
 //=> [2, 3, 4]
-</u>				</div>
-			</div>
-				<!-- end post -->
-						<div class="post" id="partition">
-				<div class="content">
-					<b class="header">partition</b>
-										<code>_.partition(array, predicate)</code>
+</u>			</div>
+		</div>
+<!-- end post -->
+		<div class="post" id="partition">
+			<div class="content">
+				<b class="header">partition</b>
+				<code>_.partition(array, predicate)</code>
 <pre class='text'>
 partition ကေတာ့ array ကို array ႏွစ္ခုအျဖစ္ခြဲထုတ္ဖို႔အတြက္ပါ၊
 predicate နဲ႔ကိုက္ညီတဲ့ element ပထမ array ထဲမွာထည့္မယ္
@@ -857,13 +857,13 @@ predicate နဲ႔ကိုက္ညီတဲ့ element ပထမ array ထဲ
 <u>
 _.partition([1,'a',2, 3, 'b', 'c'], isNaN);
 //=> [["a","b","c"],[1,2,3]]
-</u>				</div>
-			</div>
-				<!-- end post -->
-						<div class="post" id="union">
-				<div class="content">
-					<b class="header">union</b>
-										﻿<code>_.union(*arrays)</code>
+</u>			</div>
+		</div>
+<!-- end post -->
+		<div class="post" id="union">
+			<div class="content">
+				<b class="header">union</b>
+				﻿<code>_.union(*arrays)</code>
 <pre class='text'>
 array ေတြကိုဆက္တုိက္ passing လုပ္သြားလို႕ရပါတယ္၊
 array ေတြအားလံုးကို array တစ္ခုထဲအျဖစ္ေပါင္းပါတယ္
@@ -873,26 +873,26 @@ unique ျဖစ္တဲ့ value ေတြပဲပါ၀င္ေတာ့မ
 <u>
 _.union([1, 2, 3], [101, 2, 1, 10], [2, 1]);
 //=> [1, 2, 3, 101, 10]
-</u>				</div>
-			</div>
-				<!-- end post -->
-						<div class="post" id="intersection">
-				<div class="content">
-					<b class="header">intersection</b>
-										<code>_.intersection(*arrays)</code>
+</u>			</div>
+		</div>
+<!-- end post -->
+		<div class="post" id="intersection">
+			<div class="content">
+				<b class="header">intersection</b>
+				<code>_.intersection(*arrays)</code>
 <pre class='text'>
 ေပးလာတဲ့ array ေတြတိုင္းမွာဘံုပါ၀င္တဲ့ item ေတြကို return ျပန္ေပးမွာျဖစ္ပါတယ္
 </pre>
 <u>
 _.intersection([1, 2, 3], [101, 2, 1, 10], [2, 1]);
 //=> [1, 2]
-</u>				</div>
-			</div>
-				<!-- end post -->
-						<div class="post" id="difference">
-				<div class="content">
-					<b class="header">difference</b>
-										<code>_.difference(array, *others) </code>
+</u>			</div>
+		</div>
+<!-- end post -->
+		<div class="post" id="difference">
+			<div class="content">
+				<b class="header">difference</b>
+				<code>_.difference(array, *others) </code>
 <pre class="text">
 <a href="without">without</a> နဲ႔ဆင္တူပါတယ္၊ ဒါေပမယ့္ <b>difference</b> က value အစား array
 ေတြနဲ႔ အသံုးျပဳရပါတယ္၊၊
@@ -901,13 +901,13 @@ others array ေတြထဲက value ေတြကို ပထမဆံုး a
 <u>
 _.difference([1, 2, 3, 4, 5], [1], [3, 10]);
 //=> [2, 4, 5]
-</u>				</div>
-			</div>
-				<!-- end post -->
-						<div class="post" id="uniq">
-				<div class="content">
-					<b class="header">uniq</b>
-										<code>_.uniq(array, [isSorted], [iterator])</code>
+</u>			</div>
+		</div>
+<!-- end post -->
+		<div class="post" id="uniq">
+			<div class="content">
+				<b class="header">uniq</b>
+				<code>_.uniq(array, [isSorted], [iterator])</code>
 <span class='alias'>unique</span>
 <pre class='text'>
 array ထဲက ထပ္တူညီတဲ့ value တစ္ခုထက္ပိုလာရင္ဖယ္ထုတ္ၿပီး return ျပန္ေပးပါတယ္
@@ -917,13 +917,13 @@ array အမ်ားႀကီးအသံုးျပဳခ်င္ရင္�
 <u>
 _.uniq([1, 2, 1, 3, 1, 4]);
 => [1, 2, 3, 4]
-</u>				</div>
-			</div>
-				<!-- end post -->
-						<div class="post" id="zip">
-				<div class="content">
-					<b class="header">zip</b>
-										<code>_.zip(*arrays)</code>
+</u>			</div>
+		</div>
+<!-- end post -->
+		<div class="post" id="zip">
+			<div class="content">
+				<b class="header">zip</b>
+				<code>_.zip(*arrays)</code>
 <pre class='text'>
 zip method က passing လုပ္လာတဲ့ array ေတြရဲ႕ element ေတြကို
 သက္ဆိုက္ရာ index အလိုက္ ခြဲထုတ္ၿပီး return ျပန္ေပးမွာပါ၊
@@ -933,13 +933,13 @@ data source က row ေတြကို သက္ဆိုင္ရာ column အ
 <u>
 _.zip(['one', 'two', 'three'], [1, 2, 3], ['i', 'ii', 'iii']);
 //=> [["one", 1, "i"], ["two", 2, "ii"], ["three", 3, "iii"]]
-</u>				</div>
-			</div>
-				<!-- end post -->
-						<div class="post" id="object">
-				<div class="content">
-					<b class="header">object</b>
-										<code>_.object(list, [values])</code>
+</u>			</div>
+		</div>
+<!-- end post -->
+		<div class="post" id="object">
+			<div class="content">
+				<b class="header">object</b>
+				<code>_.object(list, [values])</code>
 <pre class="text">array ေတြကို object ေျပာင္းဖို႔အတြက္သံုးပါတယ္၊ list ကိုပံုစံႏွစ္မ်ိဳးနဲ႔ passing လုပ္လို႔ရပါတယ္၊
 ပထမတစ္မ်ိဳးက [key, value] စံုတြဲေတြကုိ list အတြင္းမွာထားၿပီး passing လုပ္ပါတယ္
 ဒုတိယတစ္မ်ိဳးက [key1, key2, .. ] , [val1, val2, .. ] ပံုစံနဲ႔ျဖစ္ပါတယ္
@@ -958,13 +958,13 @@ _.object(['one', 'two', 'three'], [1, 2, 3]);
 <u>
 _.object(['ga', 'ga', 'na', 'na'], [1, 2, 3, 4]);
 //=> Object {ga: 2, na: 4}
-</u>				</div>
-			</div>
-				<!-- end post -->
-						<div class="post" id="indexOf">
-				<div class="content">
-					<b class="header">indexOf</b>
-										<code>_.indexOf(array, value, [isSorted])</code>
+</u>			</div>
+		</div>
+<!-- end post -->
+		<div class="post" id="indexOf">
+			<div class="content">
+				<b class="header">indexOf</b>
+				<code>_.indexOf(array, value, [isSorted])</code>
 <pre class="text">ေပးထားတဲ့ array ထဲက ရွာခ်င္တဲ့ value ရဲ႕ Index number ကုိ return ျပန္ေပးပါတယ္၊
 ရွာလို႔မေတြခဲ့ရင္ေတာ့ -1 ကို return ျပန္ပါမယ္၊
 element ေတြက sort လုပ္ၿပီးသားလို႔သိတယ္ဆိုရင္ေတာ့
@@ -975,13 +975,13 @@ indexOf native method ရိွရင္ေတာ့ native method ကအလု�
 <u>
 _.indexOf([1, 2, 3], 2);
 //=> 1
-</u>				</div>
-			</div>
-				<!-- end post -->
-						<div class="post" id="lastIndexOf">
-				<div class="content">
-					<b class="header">lastIndexOf</b>
-										<code>_.lastIndexOf(array, value, [fromIndex]) </code>
+</u>			</div>
+		</div>
+<!-- end post -->
+		<div class="post" id="lastIndexOf">
+			<div class="content">
+				<b class="header">lastIndexOf</b>
+				<code>_.lastIndexOf(array, value, [fromIndex]) </code>
 <pre class="text">
 ရွာခ်င္တဲ့ value ရဲ႕ ေနာက္ဆံုးေတြ႕ခဲ့တဲ့ေနရာကို return ျပန္ပါမယ္၊
 မေတြခဲ့လွ်င္ -1 ကို return ျပန္ပါမယ္၊
@@ -991,13 +991,13 @@ lastIndexOf native method ရိွရင္ေတာ့ native method ကအလ
 <u>
 _.lastIndexOf([1, 2, 3, 1, 2, 3], 2);
 //=> 4
-</u>				</div>
-			</div>
-				<!-- end post -->
-						<div class="post" id="sortedIndex">
-				<div class="content">
-					<b class="header">sortedIndex</b>
-										﻿<code>_.sortedIndex(list, value, [iterator], [context]) </code>
+</u>			</div>
+		</div>
+<!-- end post -->
+		<div class="post" id="sortedIndex">
+			<div class="content">
+				<b class="header">sortedIndex</b>
+				﻿<code>_.sortedIndex(list, value, [iterator], [context]) </code>
 <pre class="text">
 sortedIndex ကေတာ့ ေပးလိုက္တဲ့ value ကိုဘယ္ index မွာထည့္သင့္လဲဆိုတာကို
 ဆံုးျဖတ္ေပးမွာျဖစ္ပါတယ္၊
@@ -1019,74 +1019,74 @@ _.sortedIndex(['one','two','three','twenty'],'four', function(el){
     return el.length;
 });
 //=> 2       
-</u>				</div>
-			</div>
-				<!-- end post -->
-					<!-- end post -->
-		<!-- end posts -->
-</div>
-<div class="posts">
-	<h2 id="Functions">Function (uh, ahem) Functions</h2>
-					<!-- end post -->
-					<!-- end post -->
-					<!-- end post -->
-					<!-- end post -->
-					<!-- end post -->
-					<!-- end post -->
-					<!-- end post -->
-					<!-- end post -->
-					<!-- end post -->
-					<!-- end post -->
-					<!-- end post -->
-					<!-- end post -->
-					<!-- end post -->
-		<!-- end posts -->
-</div>
-<div class="posts">
-	<h2 id="Objects">Object Functions</h2>
-						<div class="post" id="keys">
-				<div class="content">
-					<b class="header">keys</b>
-										<code>_.keys(object)</code>
+</u>			</div>
+		</div>
+<!-- end post -->
+<!-- end post -->
+<!-- end posts -->
+	</div>
+	<div class="posts">
+		<h2 id="Functions">Function (uh, ahem) Functions</h2>
+<!-- end post -->
+<!-- end post -->
+<!-- end post -->
+<!-- end post -->
+<!-- end post -->
+<!-- end post -->
+<!-- end post -->
+<!-- end post -->
+<!-- end post -->
+<!-- end post -->
+<!-- end post -->
+<!-- end post -->
+<!-- end post -->
+<!-- end posts -->
+	</div>
+	<div class="posts">
+		<h2 id="Objects">Object Functions</h2>
+		<div class="post" id="keys">
+			<div class="content">
+				<b class="header">keys</b>
+				<code>_.keys(object)</code>
 <pre class="text">
 Object တစ္ခုရဲ႕ properties နာမည္ေတြကို ရယူလိုတဲ့အခါအသံုးျပဳပါသည္။
 </pre>
 <u>
 _.keys({one: 1, two: 2, three: 3});
 //=> ["one", "two", "three"]
-</u>				</div>
-			</div>
-				<!-- end post -->
-						<div class="post" id="values">
-				<div class="content">
-					<b class="header">values</b>
-										﻿<code>_.keys(object)</code>
+</u>			</div>
+		</div>
+<!-- end post -->
+		<div class="post" id="values">
+			<div class="content">
+				<b class="header">values</b>
+				﻿<code>_.keys(object)</code>
 <pre class="text">
 Object တစ္ခုရဲ႕ value ေတြကို ရယူလိုတဲ့အခါအသံုးျပဳပါသည္။
 </pre>
 <u>
 _.values({one: 1, two: 2, three: 3});
 //=> [1, 2, 3]
-</u>				</div>
-			</div>
-				<!-- end post -->
-						<div class="post" id="pairs">
-				<div class="content">
-					<b class="header">pairs</b>
-										﻿<code>_.pairs(object)</code>
+</u>			</div>
+		</div>
+<!-- end post -->
+		<div class="post" id="pairs">
+			<div class="content">
+				<b class="header">pairs</b>
+				﻿<code>_.pairs(object)</code>
 <pre class="text">
 Object တစ္ခုကို [key, value] စံေျပာင္းေပးဖို႔အသံုးျပဳပါသည္။
 </pre>
 <u>
 _.pairs({one: 1, two: 2, three: 3});
 //=> [["one", 1], ["two", 2], ["three", 3]]
-</u>				</div>
-			</div>
-				<!-- end post -->
-						<div class="post" id="invert">
-				<div class="content">
-					<b class="header">invert</b>
-										﻿<code>_.invert(object)</code>
+</u>			</div>
+		</div>
+<!-- end post -->
+		<div class="post" id="invert">
+			<div class="content">
+				<b class="header">invert</b>
+				﻿<code>_.invert(object)</code>
 <pre class="text">
 Object တစ္ခုရဲ႕ key ကို value, value ကို key ေျပာင္းလဲေပးပါသည္။
 <b>ေျပာင္းလဲရာမွာ value ေတြက unique ျဖစ္ရပါမယ္၊ string [or] integer ျဖစ္ရပါမယ္</b>
@@ -1094,13 +1094,13 @@ Object တစ္ခုရဲ႕ key ကို value, value ကို key ေျ�
 <u>
 _.invert({Moe: "Moses", Larry: "Louis", Curly: "Jerome"});
 //=> {Moses: "Moe", Louis: "Larry", Jerome: "Curly"};
-</u>				</div>
-			</div>
-				<!-- end post -->
-						<div class="post" id="functions">
-				<div class="content">
-					<b class="header">functions</b>
-										﻿<code>_.functions(objects)</code>
+</u>			</div>
+		</div>
+<!-- end post -->
+		<div class="post" id="functions">
+			<div class="content">
+				<b class="header">functions</b>
+				﻿<code>_.functions(objects)</code>
 <span class="alias">methods</span>
 <pre class="text">
 Object တစ္ခုအတြင္းမွာရိွတဲ့ function property [or] method နာမည္ေတြကို
@@ -1114,13 +1114,13 @@ _.functions(_);
 // Method Names of JQuery Object
 _.functions($);
 //=> ["Animation", "Callbacks", "Deferred", "Event", "Tween", "_data", ... ]
-</u>				</div>
-			</div>
-				<!-- end post -->
-						<div class="post" id="extend">
-				<div class="content">
-					<b class="header">extend</b>
-										﻿<code>.extend(destination, *sources) </code>
+</u>			</div>
+		</div>
+<!-- end post -->
+		<div class="post" id="extend">
+			<div class="content">
+				<b class="header">extend</b>
+				﻿<code>.extend(destination, *sources) </code>
 <pre class="text">
 sources မွာထည့္မယ့္ object's property ေတြအကုန္လံုးကို
 destination က object property ေတြနဲ႔ ေပါင္းၿပီး return ျပန္ေပးမွာပါ၊
@@ -1129,26 +1129,26 @@ property နာမည္တူေနရင္ေတာ့ ေနာက္ဆံ�
 <u>
 _.extend({name: 'moe', age: 20}, {age: 50, }, {id: 10});
 //=> {name: "moe", age: 50, id: 10} 
-</u>				</div>
-			</div>
-				<!-- end post -->
-						<div class="post" id="pick">
-				<div class="content">
-					<b class="header">pick</b>
-										﻿<code>_.pick(object, *keys)</code>
+</u>			</div>
+		</div>
+<!-- end post -->
+		<div class="post" id="pick">
+			<div class="content">
+				<b class="header">pick</b>
+				﻿<code>_.pick(object, *keys)</code>
 <pre class="text">
 Object ထဲကေန ကိုယ္လိုခ်င္တဲ့ property ေတြကိုပဲ ရယူလိုတဲ့အခါအသံုးျပဳပါတယ္၊
 </pre>
 <u>
 _.pick({name: 'moe', age: 50, userid: 'moe1'}, 'name', 'age');
 //=> {name: 'moe', age: 50}
-</u>				</div>
-			</div>
-				<!-- end post -->
-						<div class="post" id="omit">
-				<div class="content">
-					<b class="header">omit</b>
-										﻿<code>_.omit(object, *keys)</code>
+</u>			</div>
+		</div>
+<!-- end post -->
+		<div class="post" id="omit">
+			<div class="content">
+				<b class="header">omit</b>
+				﻿<code>_.omit(object, *keys)</code>
 <pre class="text">
 Object ထဲကေန မလိုခ်င္တဲ့ property ေတြကို ဖယ္ထုတ္ခ်င္တဲ့အခါမွာ အသံုးျပဳပါတယ္။
 <a href="#pick">_.pick</a> နဲ႔ဆန္႔က်င္ဘက္ပါ၊
@@ -1156,13 +1156,13 @@ Object ထဲကေန မလိုခ်င္တဲ့ property ေတြက�
 <u>
 _.omit({name: 'moe', age: 50, userid: 'moe1'}, 'name', 'age');
 //=> {userid: "moe1"}
-</u>				</div>
-			</div>
-				<!-- end post -->
-						<div class="post" id="defaults">
-				<div class="content">
-					<b class="header">defaults</b>
-										﻿<code>_.defaults(object, *defaults)</code>
+</u>			</div>
+		</div>
+<!-- end post -->
+		<div class="post" id="defaults">
+			<div class="content">
+				<b class="header">defaults</b>
+				﻿<code>_.defaults(object, *defaults)</code>
 <pre class="text">
 default ရဲ႕ property ေတြက object မွမပါဘူးဆိုရင္ ထည့္ေပးပါမယ္
 ပါခဲ့ရင္ေတာ့ default ကအက်ိဳးသက္ေရာက္မႈမရိွပါဘူး။
@@ -1175,19 +1175,19 @@ _.defaults({laptop: 'hp'}, flavor);
 
 _.defaults({phone: 'iphone', color: 'white'}, flavor);
 //=> {phone: "iphone", color: "white"}
-</u>				</div>
-			</div>
-				<!-- end post -->
-					<!-- end post -->
-					<!-- end post -->
-					<!-- end post -->
-					<!-- end post -->
-					<!-- end post -->
-					<!-- end post -->
-						<div class="post" id="isEmpty">
-				<div class="content">
-					<b class="header">isEmpty</b>
-										<code>_.isEmpty(object) </code>
+</u>			</div>
+		</div>
+<!-- end post -->
+<!-- end post -->
+<!-- end post -->
+<!-- end post -->
+<!-- end post -->
+<!-- end post -->
+<!-- end post -->
+		<div class="post" id="isEmpty">
+			<div class="content">
+				<b class="header">isEmpty</b>
+				<code>_.isEmpty(object) </code>
 <pre class="text">
 Object က value တစ္ခုမွမရိွရင္ <i>true</i> return ျပန္ပါမယ္
 </pre>
@@ -1197,13 +1197,13 @@ _.isEmpty([1, 2, 3]);
 
 _.isEmpty({});
 //=> true
-</u>				</div>
-			</div>
-				<!-- end post -->
-						<div class="post" id="isElement">
-				<div class="content">
-					<b class="header">isElement</b>
-										<code>_.isElement(object) </code>
+</u>			</div>
+		</div>
+<!-- end post -->
+		<div class="post" id="isElement">
+			<div class="content">
+				<b class="header">isElement</b>
+				<code>_.isElement(object) </code>
 <pre class="text">
 Object က DOM(Document Object Model) element <b>* တစ္ခု</b> ျဖစ္ရင္
 <i>true</i> ကို return ျပန္ေပးပါမယ္၊
@@ -1217,13 +1217,13 @@ _.isElement(document.getElementsByTagName('div')[0]);
 
 _.isElement(jQuery('body')[0]);
 //=> true
-</u>				</div>
-			</div>
-				<!-- end post -->
-						<div class="post" id="isArray">
-				<div class="content">
-					<b class="header">isArray</b>
-										<code>_.isArray(object) </code>
+</u>			</div>
+		</div>
+<!-- end post -->
+		<div class="post" id="isArray">
+			<div class="content">
+				<b class="header">isArray</b>
+				<code>_.isArray(object) </code>
 <pre class="text">
 Object က Array ျဖစ္ရင္ true ကို return ျပန္ပါမယ္၊
 <i>* Javascript မွာ Array ေတြကလည္းလဲ Object ျဖစ္ပါတယ္</i>
@@ -1235,13 +1235,13 @@ Object က Array ျဖစ္ရင္ true ကို return ျပန္ပါ�
 
 _.isArray([1,2,3]);
 //=> true
-</u>				</div>
-			</div>
-				<!-- end post -->
-						<div class="post" id="isObject">
-				<div class="content">
-					<b class="header">isObject</b>
-										<code>_.isObject(value) </code>
+</u>			</div>
+		</div>
+<!-- end post -->
+		<div class="post" id="isObject">
+			<div class="content">
+				<b class="header">isObject</b>
+				<code>_.isObject(value) </code>
 <pre class="text">
 value က Object တစ္ခုျဖစ္လွ်င္ true return ျပန္ပါမယ္၊
 <i>Javascript array ေတြနဲ့ function ေတြက Object ေတြျဖစ္က်ပါတယ္</i>
@@ -1256,13 +1256,13 @@ _.isObject(1);
 
 _.isObject([]);
 //=> true
-</u>				</div>
-			</div>
-				<!-- end post -->
-						<div class="post" id="isArguments">
-				<div class="content">
-					<b class="header">isArguments</b>
-										<code>_.isArguments(object)</code>
+</u>			</div>
+		</div>
+<!-- end post -->
+		<div class="post" id="isArguments">
+			<div class="content">
+				<b class="header">isArguments</b>
+				<code>_.isArguments(object)</code>
 <pre class="text">
 Object က "Arguments" object ျဖစ္လွ်င္ true ကို return ျပန္ပါမယ္၊
 </pre>
@@ -1272,13 +1272,13 @@ Object က "Arguments" object ျဖစ္လွ်င္ true ကို return 
 
 _.isArguments([1,2,3]);
 //=> false
-</u>				</div>
-			</div>
-				<!-- end post -->
-						<div class="post" id="isFunction">
-				<div class="content">
-					<b class="header">isFunction</b>
-										<code>_.isFunction(object)</code>
+</u>			</div>
+		</div>
+<!-- end post -->
+		<div class="post" id="isFunction">
+			<div class="content">
+				<b class="header">isFunction</b>
+				<code>_.isFunction(object)</code>
 <pre class="text">
 <b>object</b> က Function ျဖစ္လွ်င္ true ကို return ျပန္ပါမယ္၊
 </pre>
@@ -1286,13 +1286,13 @@ _.isArguments([1,2,3]);
 _.isFunction(alert);
 //=> true
 </u>
-				</div>
 			</div>
-				<!-- end post -->
-						<div class="post" id="isString">
-				<div class="content">
-					<b class="header">isString</b>
-										<code>_.isString(object)</code>
+		</div>
+<!-- end post -->
+		<div class="post" id="isString">
+			<div class="content">
+				<b class="header">isString</b>
+				<code>_.isString(object)</code>
 <pre class="text">
 <b>object</b> က String ျဖစ္လွ်င္ true ကို return ျပန္ပါမယ္၊
 </pre>
@@ -1300,13 +1300,13 @@ _.isFunction(alert);
 _.isString("moe");
 //=> true
 </u>
-				</div>
 			</div>
-				<!-- end post -->
-						<div class="post" id="isNumber">
-				<div class="content">
-					<b class="header">isNumber</b>
-										<code>_.isNumber(object)</code>
+		</div>
+<!-- end post -->
+		<div class="post" id="isNumber">
+			<div class="content">
+				<b class="header">isNumber</b>
+				<code>_.isNumber(object)</code>
 <pre class="text">
 <b>object</b> က Number ျဖစ္လွ်င္ true ကို return ျပန္ပါမယ္၊
 <i>* Javascript</i> မွာ NaN ကလည္ Number type ျဖစ္ပါတယ္၊
@@ -1322,14 +1322,14 @@ _.isNumber(Math.PI + '1');
 _.isNumber(Math.PI * '1');
 //=> true
 </u>
-				</div>
 			</div>
-				<!-- end post -->
-					<!-- end post -->
-						<div class="post" id="isBoolean">
-				<div class="content">
-					<b class="header">isBoolean</b>
-										<code>_.isBoolean(object)</code>
+		</div>
+<!-- end post -->
+<!-- end post -->
+		<div class="post" id="isBoolean">
+			<div class="content">
+				<b class="header">isBoolean</b>
+				<code>_.isBoolean(object)</code>
 <pre class="text">
 <b>object</b> က Boolean(true/false) ျဖစ္လွ်င္ true ကို return ျပန္ပါမယ္၊
 </pre>
@@ -1340,13 +1340,13 @@ _.isBoolean( null );
 _.isBoolean( 1 === 2);
 //=> true
 </u>
-				</div>
 			</div>
-				<!-- end post -->
-						<div class="post" id="isDate">
-				<div class="content">
-					<b class="header">isDate</b>
-										<code>_.isDate(object)</code>
+		</div>
+<!-- end post -->
+		<div class="post" id="isDate">
+			<div class="content">
+				<b class="header">isDate</b>
+				<code>_.isDate(object)</code>
 <pre class="text">
 <b>object</b> က Date ျဖစ္လွ်င္ true ကို return ျပန္ပါမယ္၊
 </pre>
@@ -1354,25 +1354,25 @@ _.isBoolean( 1 === 2);
 _.isDate(new Date());
 //=> true
 </u>
-				</div>
 			</div>
-				<!-- end post -->
-						<div class="post" id="isRegExp">
-				<div class="content">
-					<b class="header">isRegExp</b>
-										<code>_.isRegExp(object)</code>
+		</div>
+<!-- end post -->
+		<div class="post" id="isRegExp">
+			<div class="content">
+				<b class="header">isRegExp</b>
+				<code>_.isRegExp(object)</code>
 <pre class="text"><b>object</b> က Regular Expression ျဖစ္လွ်င္ true ကို return ျပန္ပါမယ္၊
 </pre>
 <u>
 _.isRegExp(/lorem/g);
 //=> true
-</u>				</div>
-			</div>
-				<!-- end post -->
-						<div class="post" id="isNaN">
-				<div class="content">
-					<b class="header">isNaN</b>
-										﻿<code>_.isNaN(object)</code>
+</u>			</div>
+		</div>
+<!-- end post -->
+		<div class="post" id="isNaN">
+			<div class="content">
+				<b class="header">isNaN</b>
+				﻿<code>_.isNaN(object)</code>
 <pre class="text">
 <b>object</b> က NaN ျဖစ္လွ်င္ true ကို return ျပန္ေပးသည္၊
 နဂိုပါဝင္တဲ့ <b>isNaN</b> နဲ႔မတူပါဘူး သူက number မဟုတ္တဲ့ အျခား type ေတာ္ေတာ္မ်ားမ်ားကို
@@ -1386,13 +1386,13 @@ isNaN(undefined);
 //=> true
 _.isNaN(undefined);
 //=> false
-</u>				</div>
-			</div>
-				<!-- end post -->
-						<div class="post" id="isNull">
-				<div class="content">
-					<b class="header">isNull</b>
-										<code>_.isNull(object)</code>
+</u>			</div>
+		</div>
+<!-- end post -->
+		<div class="post" id="isNull">
+			<div class="content">
+				<b class="header">isNull</b>
+				<code>_.isNull(object)</code>
 <pre class="text">
 <b>object</b> က null ျဖစ္လွ်င္ true ကိ return ျပန္ေပးမည္၊
 </pre>
@@ -1401,58 +1401,61 @@ _.isNull(null);
 //=> true
 _.isNull(undefined);
 //=> false
-</u>				</div>
-			</div>
-				<!-- end post -->
-						<div class="post" id="isUndefined">
-				<div class="content">
-					<b class="header">isUndefined</b>
-										<code>_.isUndefined(object)</code>
+</u>			</div>
+		</div>
+<!-- end post -->
+		<div class="post" id="isUndefined">
+			<div class="content">
+				<b class="header">isUndefined</b>
+				<code>_.isUndefined(object)</code>
 <pre class="text">
 <b>object</b> က undefined ျဖစ္လွ်င္ true ကိ return ျပန္ေပးမည္၊
 </pre>
 <u>
 _.isUndefined(window.lorem);
 //=> true
-</u>				</div>
-			</div>
-				<!-- end post -->
-		<!-- end posts -->
-</div>
-<div class="posts">
-	<h2 id="Utility">Utility Functions</h2>
-					<!-- end post -->
-					<!-- end post -->
-					<!-- end post -->
-					<!-- end post -->
-					<!-- end post -->
-					<!-- end post -->
-					<!-- end post -->
-					<!-- end post -->
-					<!-- end post -->
-					<!-- end post -->
-					<!-- end post -->
-		<!-- end posts -->
-</div>
-<div class="posts">
-	<h2 id="Chaining">Chaining</h2>
-					<!-- end post -->
-					<!-- end post -->
-		<!-- end posts -->
-</div>
+</u>			</div>
+		</div>
+<!-- end post -->
+<!-- end posts -->
+	</div>
+	<div class="posts">
+		<h2 id="Utility">Utility Functions</h2>
+		<div class="post" id="noConflict">
+			<div class="content">
+				<b class="header">noConflict</b>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloremque et nihil rem ipsa ut iusto dolore nobis harum qui fugit odio, id at similique fuga quibusdam ipsum laboriosam accusantium.			</div>
+		</div>
+<!-- end post -->
+<!-- end post -->
+<!-- end post -->
+<!-- end post -->
+<!-- end post -->
+<!-- end post -->
+<!-- end post -->
+<!-- end post -->
+<!-- end post -->
+<!-- end post -->
+<!-- end post -->
+<!-- end posts -->
+	</div>
+	<div class="posts">
+		<h2 id="Chaining">Chaining</h2>
+<!-- end post -->
+<!-- end post -->
+<!-- end posts -->
+	</div>
 		<!---->
 	</div>
 	<!-- end of content -->
 
 <div id="data" style="display:none">
-	<i id="finished_percent">64.29</i>
+	<i id="finished_percent">65.31</i>
 </div>
 </div>
 <script src="assets/js/zepto.min.js"></script>
 <script src="assets/js/zepto.scrollToTop.js"></script>
 <script src="assets/js/highlight.pack.js"></script>
-<script src="assets/js/underscore.min.js"></script>
-<script src="assets/js/backbone.js"></script>
 <script src="assets/js/script.js"></script>
 </body>
 </html>
