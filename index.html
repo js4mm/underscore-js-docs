@@ -1424,13 +1424,89 @@ _.isUndefined(window.lorem);
 		<div class="post" id="noConflict">
 			<div class="content">
 				<b class="header">noConflict</b>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloremque et nihil rem ipsa ut iusto dolore nobis harum qui fugit odio, id at similique fuga quibusdam ipsum laboriosam accusantium.			</div>
+				﻿<code>_.noConflict()</code>
+<pre>"_" သေကၤတကို Underscore js က အလြယ္အသံုးျပုနုိင္ဖုိ့ သတ္မွတ္ထားျခင္ပဲျဖစ္ပါတယ္။
+အကယ္၍ project ထဲမွာ အျခား javascript framework တစ္ခုကလည္း "_" ကိုပဲ သံုးမယ္ဆိုရင္ တစ္ခုကေတာ့
+ေသခ်ာေပာက္ အလုပ္မလုပ္ေတာ့ပါဘူး၊ အဲဒီလိုအေျခအေနမ်ိုးမွာ <b>noConflict</b> ကိုအသံုးျပုရပါတယ္။
+<b>noConflict</b> method က <b>Underscore</b> object ကို reference လုပ္နုိင္ဖို့ return ျပန္ေပးပါတယ္ </pre>
+<u>
+var underscore = _.noConflict();
+// underscore.isString("moe");
+</u>
+			</div>
 		</div>
 <!-- end post -->
+		<div class="post" id="identity">
+			<div class="content">
+				<b class="header">identity</b>
+				﻿<code>_.identity(value)</code>
+<pre>ေပးလုိက္တဲ့ value ကိုပဲ return ျပန္ေပးပါတယ္။
+ဒီ function ကအသံုးမ၀င္ဘူးထင္ရေပမယ့္ Underscore ရဲ့ ေနရာေတာ္ေတာ္မ်ားမ်ားမွာ 
+default iterator အျဖစ္အသံုးျပုထားပါတယ္။ ဥပမာေလးကို ျကည့္ရင္နားလည္သြားမွာပါ။
+</pre>
+<u>
+var moe = {name: 'moe'};
+moe === _.identity(moe);
+//=> true
+
+var list = [0,1,null,,NaN];
+_.filter(list, _.identity);
+//=> [1]
+</u>			</div>
+		</div>
 <!-- end post -->
+		<div class="post" id="constant">
+			<div class="content">
+				<b class="header">constant</b>
+				﻿<code>_.constant(value)</code>
+<pre>value ကို return ျပန္ေပးတဲ့ <b>function</b> တစ္ခုကို return ျပန္ေပးပါတယ္
+Underscore မွာ ဒီ function ကို ျပန္လည္အသံုးျပုထားျခင္းမရိွပါဘူး
+</pre>
+<u>
+var moe = {name: 'moe'};
+moe === _.constant(moe)();
+//=> true
+</u>			</div>
+		</div>
 <!-- end post -->
+		<div class="post" id="times">
+			<div class="content">
+				<b class="header">times</b>
+							</div>
+		</div>
 <!-- end post -->
+		<div class="post" id="random">
+			<div class="content">
+				<b class="header">random</b>
+				﻿<code>_.random(min, mix)</code>
+<pre>min နွင့္ max <b>အပါအ၀င္</b> ျကားမွာရိွတဲ့ random ကိန္းျပည့္တစ္ခုကို return ျပန္ေပးပါတယ္။
+argument တစ္ခုပဲေပးမယ္ဆိုရင္ေတာ့ 0 ကို min အျဖစ္သတ္မွတ္ပါတယ္။<pre>
+<u>
+_.random(0, 10)
+//=> 3 
+
+_(10).random(); // By Chaining Method
+//=> 0
+</u>
+			</div>
+		</div>
 <!-- end post -->
+		<div class="post" id="mixin">
+			<div class="content">
+				<b class="header">mixin</b>
+				﻿<code>_.mixin(object)</code>
+<pre>Underscore မွာ ကိုယ္တိုင္ function ေတြကို ထည့္သြင္းဖို့အတြက္ျဖစ္ပါတယ္။</pre>
+<u>
+_.mixin({
+  capitalize: function(str) {
+    return (str)[0].toUpperCase() + str.substring(1).toLowerCase();
+  }
+});
+capitalize('mYanmAr');
+//=> "Myanmar"
+</u>
+			</div>
+		</div>
 <!-- end post -->
 <!-- end post -->
 <!-- end post -->
@@ -1450,7 +1526,7 @@ _.isUndefined(window.lorem);
 	<!-- end of content -->
 
 <div id="data" style="display:none">
-	<i id="finished_percent">65.31</i>
+	<i id="finished_percent">70.41</i>
 </div>
 </div>
 <script src="assets/js/zepto.min.js"></script>
