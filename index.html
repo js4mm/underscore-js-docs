@@ -830,7 +830,7 @@ _.compact([1, 2, '', false, 0, 3])
 </u>			</div>
 		</div>
 <!-- end post -->
-<!-- end post -->
+	<!-- end post -->
 		<div class="post" id="without">
 			<div class="content">
 				<b class="header">without</b>
@@ -1022,24 +1022,24 @@ _.sortedIndex(['one','two','three','twenty'],'four', function(el){
 </u>			</div>
 		</div>
 <!-- end post -->
-<!-- end post -->
+	<!-- end post -->
 <!-- end posts -->
 	</div>
 	<div class="posts">
 		<h2 id="Functions">Function (uh, ahem) Functions</h2>
-<!-- end post -->
-<!-- end post -->
-<!-- end post -->
-<!-- end post -->
-<!-- end post -->
-<!-- end post -->
-<!-- end post -->
-<!-- end post -->
-<!-- end post -->
-<!-- end post -->
-<!-- end post -->
-<!-- end post -->
-<!-- end post -->
+	<!-- end post -->
+	<!-- end post -->
+	<!-- end post -->
+	<!-- end post -->
+	<!-- end post -->
+	<!-- end post -->
+	<!-- end post -->
+	<!-- end post -->
+	<!-- end post -->
+	<!-- end post -->
+	<!-- end post -->
+	<!-- end post -->
+	<!-- end post -->
 <!-- end posts -->
 	</div>
 	<div class="posts">
@@ -1178,12 +1178,12 @@ _.defaults({phone: 'iphone', color: 'white'}, flavor);
 </u>			</div>
 		</div>
 <!-- end post -->
-<!-- end post -->
-<!-- end post -->
-<!-- end post -->
-<!-- end post -->
-<!-- end post -->
-<!-- end post -->
+	<!-- end post -->
+	<!-- end post -->
+	<!-- end post -->
+	<!-- end post -->
+	<!-- end post -->
+	<!-- end post -->
 		<div class="post" id="isEmpty">
 			<div class="content">
 				<b class="header">isEmpty</b>
@@ -1325,7 +1325,7 @@ _.isNumber(Math.PI * '1');
 			</div>
 		</div>
 <!-- end post -->
-<!-- end post -->
+	<!-- end post -->
 		<div class="post" id="isBoolean">
 			<div class="content">
 				<b class="header">isBoolean</b>
@@ -1508,17 +1508,59 @@ capitalize('mYanmAr');
 			</div>
 		</div>
 <!-- end post -->
+		<div class="post" id="uniqueId">
+			<div class="content">
+				<b class="header">uniqueId</b>
+				﻿<code>_.uniqueId([prefix])</code>
+<pre>
+မထပ္တဲ့ uniquie Id ေတြကိုု auto increment လုပ္ျပီး return ျပန္ေပးမွာျဖစ္ပါတယ္။
+prefix ေပးမယ္ဆိုရင္ Id နဲ့ ေပါင္းျပီး return ျပန္ေပးမွာ ျဖစ္ပါတယ္။
+</pre>
+<u>
+_(3).times(function(n) {
+	console.log(_.uniqueId( n + ' + 1 = ' ));
+});
+//=> 0 + 1 = 1
+//   1 + 1 = 2
+//   2 + 1 = 3
+</u>			</div>
+		</div>
 <!-- end post -->
+		<div class="post" id="escape">
+			<div class="content">
+				<b class="header">escape</b>
+				﻿<code>_.escape(string)</code>
+<pre>
+HTML မွာ Special Character(&, <, >, ", and ') ေတြကို ထည့္သြင္းအသံုးျပုနိုင္ဖို့အတြက္
+escape လုပ္ရာတြင္အသံုးျပုရပါတယ္။
+</pre>
+<u>
+_.escape('Curly, Larry & Moe');
+//=> "Curly, Larry &amp;amp; Moe"
+</u>
+			</div>
+		</div>
 <!-- end post -->
+		<div class="post" id="unescape">
+			<div class="content">
+				<b class="header">unescape</b>
+				﻿<code>_.unescape(string)</code>
+<pre><a href="#escape">escape</a> နွင့္ ဆန့္က်င္ဖက္ျဖစ္ပါတယ္။ escape လုပ္ထားတဲ့ character ေတြကို 
+မူလ ပံုစံေျပာင္းေပးပါတယ္</pre>
+<u>
+_.unescape('Curly, Larry &amp; Moe');
+//=> "Curly, Larry & Moe"
+</u>			</div>
+		</div>
 <!-- end post -->
-<!-- end post -->
-<!-- end post -->
+	<!-- end post -->
+	<!-- end post -->
 <!-- end posts -->
 	</div>
 	<div class="posts">
 		<h2 id="Chaining">Chaining</h2>
-<!-- end post -->
-<!-- end post -->
+	<!-- end post -->
+	<!-- end post -->
 <!-- end posts -->
 	</div>
 		<!---->
@@ -1526,7 +1568,7 @@ capitalize('mYanmAr');
 	<!-- end of content -->
 
 <div id="data" style="display:none">
-	<i id="finished_percent">70.41</i>
+	<i id="finished_percent">73.47% Finished<br><br>flatten(<small>Arrays</small>)<br>range(<small>Arrays</small>)<br>bind(<small>Functions</small>)<br>bindAll(<small>Functions</small>)<br>partial(<small>Functions</small>)<br>memoize(<small>Functions</small>)<br>delay(<small>Functions</small>)<br>defer(<small>Functions</small>)<br>throttle(<small>Functions</small>)<br>debounce(<small>Functions</small>)<br>once(<small>Functions</small>)<br>after(<small>Functions</small>)<br>now(<small>Functions</small>)<br>wrap(<small>Functions</small>)<br>compose(<small>Functions</small>)<br>clone(<small>Objects</small>)<br>tap(<small>Objects</small>)<br>has(<small>Objects</small>)<br>matches(<small>Objects</small>)<br>property(<small>Objects</small>)<br>isEqual(<small>Objects</small>)<br>isFinite(<small>Objects</small>)<br>result(<small>Utility</small>)<br>template(<small>Utility</small>)<br>change(<small>Chaining</small>)<br>value(<small>Chaining</small>)</i>
 </div>
 </div>
 <script src="assets/js/zepto.min.js"></script>
